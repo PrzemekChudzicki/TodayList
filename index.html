@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Today list</title>
+</head>
+<body>
+  <div id="container">
+    <div id="headerDiv">
+      <span id="span">Today's task list</span>
+      <input type="text" id="inputText" placeholder="Enter an activity..."><button id="addItem"><i id="plus" class="fa fa-plus" aria-hidden="true"></i></button></div>
+    <div id="list">   
+      <ul id="activity">
+        <li>Go to the gym
+            <button class="remove">remove</button>
+            <button class="success">successful</button>
+        </li>
+          <li>Learn languages
+              <button class="remove">remove</button>
+              <button class="success">successful</button>
+        </li>
+        <li>Buy a watch
+            <button class="remove">remove</button>
+            <button class="success">successful</button>
+        </li>
+        <li>Meet with friends
+          <button class="remove">remove</button>
+          <button class="success">successful</button>
+      </li>
+      </ul>
+      <div id="space">Done:</div>
+      <ul id="done">
+        <li>Jogging
+          <button class="remove">remove</button>
+          <button class="success">successful</button>
+        </li>
+        <li>Play video games
+          <button class="remove">remove</button>
+          <button class="success">successful</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+<script src="javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+$primary-color:rgb(36, 160, 129);
+$sec-color: #597FCA;
+$third-color:rgba(90, 216, 174, 0.623);
+$four-color:rgba(236, 235, 235, 0.678);
+$five-color: #fff;
+$font-family: 'Lato', sans-serif;
+$font-size: 25px;
+$font-color: #fff;
+
+*{
+  margin: 0;
+  padding: 0;
+  background: $four-color;
+  font-weight: bold;
+  box-sizing: border-box;
+   #container{
+      font-family: $font-family;
+      font-size: $font-size;
+      max-width: 1100px;
+      margin: 0 auto;
+      border: 10px $primary-color
+  }
+}
+#headerDiv{
+  text-align: center;
+  background: $primary-color;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,1);
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,1);
+
+  #span{
+    display: block;
+    color: #fff;
+    background: $primary-color;
+    font-size: 35px;
+  }
+  
+  #inputText{
+    width: 75%;
+    height: 80px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: $font-size;
+    margin: 10px 0px 20px 0px;
+    background: $third-color;
+    border: 0px;
+    color: #fff;
+  }
+  #addItem{
+    width: 10%;
+    height: 80px;
+    background: $third-color;
+    font-size: $font-size;
+    color: $font-color;
+    cursor: pointer;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+    border:0px;
+    background: white;
+    #plus{
+      background: transparent;
+      font-size:27px;
+      color: $primary-color;
+    }
+  }
+}
+#list{
+  background:#fff;
+  color: #000;
+  text-align: center;
+  align-items: center;
+  #activity{
+    padding: 10px;
+    li{
+      padding: 15px;
+      margin: 15px;
+      list-style-type: none;
+      border:1px solid white;
+      border-radius: 5px;
+      background: #fff;
+      -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,1);
+      -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,1);
+      box-shadow: 0px 1px 2px 0px rgba(0,0,0,1);
+      button{
+        float: right;
+        padding: 7px;
+        margin-right: 10px;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 15px;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,1);
+        -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,1);
+        box-shadow: 0px 1px 2px 0px rgba(0,0,0,1);
+        border: 1px solid;
+      }
+      .success{
+        background: $primary-color;
+      }
+      .remove{
+        background: #F57170;
+      }
+      .success:hover{
+        border: 2px $sec-color solid;
+        transition: all 150ms linear;
+      }
+      .remove:hover{
+        border: 2px $sec-color solid;
+        transition: all 150ms linear;
+      }
+    }
+    li:hover{
+      border: 1px black solid;
+      transition: all 100ms linear;
+    }
+  }
+  #space{
+    height: 32px;
+    background: $primary-color;
+    color: #fff;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,1);
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,1);
+  }  
+  #done{
+    padding: 10px;
+    li{
+      padding: 15px;
+      margin: 15px;
+      list-style-type: none;
+      border:1px solid white;
+      border-radius: 5px;
+      background: #fff;
+    }
+    button{
+      float: right;
+      padding: 7px;
+      margin-right: 10px;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  }
+}
+@media only screen and ( max-width: 500px ) {
+
+  #activity{
+    font-size: 20px;
+    li{
+      padding: 5px!important;
+      height: 53px!important;
+    }
+  button{
+    font-size: 15px!important;
+    padding: 10px!important;
+    margin-right: 4px!important;
+    }
+  } 
+  #done{
+    font-size: 20px;
+    li{
+      padding: 5px!important;
+      height: 53px!important;
+    }
+  button{
+    font-size: 15px!important;
+    padding: 10px!important;
+    margin-right: 4px!important;
+    }
+  }
+
+}
+
